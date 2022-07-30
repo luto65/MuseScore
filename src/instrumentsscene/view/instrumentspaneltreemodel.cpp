@@ -73,6 +73,10 @@ InstrumentsPanelTreeModel::InstrumentsPanelTreeModel(QObject* parent)
     context()->currentNotationChanged().onNotify(this, [this]() {
         onNotationChanged();
     });
+
+    shortcutsRegister()->shortcutsChanged().onNotify(this, [this]() {
+        emit addInstrumentsKeyboardShortcutChanged();
+    });
 }
 
 void InstrumentsPanelTreeModel::onMasterNotationChanged()
@@ -556,6 +560,11 @@ bool InstrumentsPanelTreeModel::isAddingAvailable() const
 bool InstrumentsPanelTreeModel::isEmpty() const
 {
     return m_rootItem ? m_rootItem->isEmpty() : true;
+}
+
+QString InstrumentsPanelTreeModel::addInstrumentsKeyboardShortcut() const
+{
+    return shortcuts::sequencesToNativeText({ shortcutsRegister()->shortcut("instruments").sequences[0] });
 }
 
 void InstrumentsPanelTreeModel::setIsRemovingAvailable(bool isRemovingAvailable)
