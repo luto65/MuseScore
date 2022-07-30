@@ -10009,22 +10009,19 @@ This action will not delete any of your scores.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/appshell/qml/AboutDialog.qml" line="104"/>
-        <source>Get %1help%2 with the program or %3contribute%4 to its development.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link (same for %3 and %4)</extracomment>
+        <location filename="../../src/appshell/qml/AboutDialog.qml" line="103"/>
+        <source>Get &lt;a href=&quot;%1&quot;&gt;help&lt;/a&gt; with the program or &lt;a href=&quot;%2&quot;&gt;contribute&lt;/a&gt; to its development.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/appshell/qml/AboutDialog.qml" line="118"/>
-        <source>For privacy information, see our %1privacy policy%2.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link</extracomment>
+        <location filename="../../src/appshell/qml/AboutDialog.qml" line="116"/>
+        <source>For privacy information, see our &lt;a href=&quot;%1&quot;&gt;privacy policy&lt;/a&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/appshell/qml/AboutDialog.qml" line="129"/>
+        <location filename="../../src/appshell/qml/AboutDialog.qml" line="125"/>
         <source>Copyright © 1999-2022 MuseScore BVBA and others.
-Published under the %1GNU General Public License version 3%2.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link</extracomment>
+Published under the &lt;a href=&quot;%1&quot;&gt;GNU General Public License version 3&lt;/a&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -10225,9 +10222,8 @@ Published under the %1GNU General Public License version 3%2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/appshell/qml/Preferences/internal/AutomaticUpdateSection.qml" line="59"/>
-        <source>Update checking requires network access. In order to protect your privacy, MuseScore does not store any personal information. See our %1privacy policy%2 for more info.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link</extracomment>
+        <location filename="../../src/appshell/qml/Preferences/internal/AutomaticUpdateSection.qml" line="58"/>
+        <source>Update checking requires network access. In order to protect your privacy, MuseScore does not store any personal information. See our &lt;a href=&quot;%1&quot;&gt;privacy policy&lt;/a&gt; for more info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -12588,29 +12584,27 @@ Published under the %1GNU General Public License version 3%2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engraving/engravingerrors.h" line="75"/>
-        <source>It was last saved with a version older than 2.0.0. You can convert this score by opening and then saving with MuseScore version 2.x. Visit the %1MuseScore download page%2 to obtain such a 2.x version.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link.</extracomment>
+        <location filename="../../src/engraving/engravingerrors.h" line="74"/>
+        <source>This file was last saved in a version older than 2.0.0. You can convert this score by opening and then saving in MuseScore version 2.x. Visit the &lt;a href=&quot;%1&quot;&gt;MuseScore download page&lt;/a&gt; to obtain such a 2.x version.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engraving/engravingerrors.h" line="83"/>
-        <source>This score was saved using a newer version of MuseScore. Visit the %1MuseScore website%2 to obtain the latest version.</source>
-        <extracomment>The text between %1 and %2 will be a clickable link.</extracomment>
+        <location filename="../../src/engraving/engravingerrors.h" line="81"/>
+        <source>This file was saved using a newer version of MuseScore. Visit the &lt;a href=&quot;%1&quot;&gt;MuseScore website&lt;/a&gt; to obtain the latest version.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engraving/engravingerrors.h" line="88"/>
-        <source>It was last saved with a development version of 3.0.</source>
+        <location filename="../../src/engraving/engravingerrors.h" line="86"/>
+        <source>This file was last saved with a development version of 3.0.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engraving/engravingerrors.h" line="91"/>
+        <location filename="../../src/engraving/engravingerrors.h" line="89"/>
         <source>File &quot;%1&quot; is corrupted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engraving/engravingerrors.h" line="94"/>
+        <location filename="../../src/engraving/engravingerrors.h" line="92"/>
         <source>File &quot;%1&quot; is critically corrupted and cannot be processed.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -16472,7 +16466,7 @@ Published under the %1GNU General Public License version 3%2.</source>
 <context>
     <name>global</name>
     <message>
-        <location filename="../../src/appshell/qml/AboutDialog.qml" line="149"/>
+        <location filename="../../src/appshell/qml/AboutDialog.qml" line="142"/>
         <location filename="../../src/appshell/qml/AboutMusicXMLDialog.qml" line="122"/>
         <location filename="../../src/appshell/qml/Preferences/internal/PreferencesButtonsPanel.qml" line="98"/>
         <location filename="../../src/framework/ui/qml/MuseScore/Ui/internal/StandardDialog.qml" line="41"/>
@@ -16531,7 +16525,9 @@ Published under the %1GNU General Public License version 3%2.</source>
     </message>
     <message>
         <location filename="../../src/framework/shortcuts/qml/MuseScore/Shortcuts/internal/MidiMappingBottomPanel.qml" line="69"/>
+        <location filename="../../src/framework/shortcuts/qml/MuseScore/Shortcuts/internal/ShortcutsTopPanel.qml" line="79"/>
         <location filename="../../src/framework/uicomponents/qml/MuseScore/UiComponents/TextInputField.qml" line="225"/>
+        <location filename="../../src/inspector/view/qml/MuseScore/Inspector/notation/fretdiagrams/FretDiagramSettings.qml" line="73"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
@@ -17969,11 +17965,6 @@ pickup measure</source>
         <location filename="../../src/inspector/view/qml/MuseScore/Inspector/notation/lines/internal/HairpinStyleSettings.qml" line="120"/>
         <location filename="../../src/inspector/view/qml/MuseScore/Inspector/notation/spacers/SpacerSettings.qml" line="48"/>
         <source>Height</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/inspector/view/qml/MuseScore/Inspector/notation/fretdiagrams/FretDiagramSettings.qml" line="73"/>
-        <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -19475,8 +19466,9 @@ pickup measure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="67"/>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="68"/>
         <source>Add</source>
+        <extracomment>Keep in sync with the message that appears if there are no instruments in the score (InstrumentsPanel.qml)</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -19486,18 +19478,18 @@ pickup measure</source>
     </message>
     <message>
         <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/ChooseInstrumentsPage.qml" line="233"/>
-        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="83"/>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="84"/>
         <source>Move selected instruments up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/ChooseInstrumentsPage.qml" line="248"/>
-        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="101"/>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="102"/>
         <source>Move selected instruments down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="119"/>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/internal/InstrumentsControlPanel.qml" line="120"/>
         <source>Remove selected instruments</source>
         <translation type="unfinished"></translation>
     </message>
@@ -19639,9 +19631,14 @@ pickup measure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/InstrumentsPanel.qml" line="120"/>
-        <source>There are no instruments in your score. To choose some, press %1Add%2, or use the shortcut %1‘i’%2</source>
-        <extracomment>Text between %1 and %2 will be printed in a bold font.</extracomment>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/InstrumentsPanel.qml" line="121"/>
+        <source>There are no instruments in your score. To choose some, press &lt;b&gt;Add&lt;/b&gt;, or use the keyboard shortcut %1.</source>
+        <extracomment>Keep in sync with the text of the &quot;Add&quot; button at the top of the Instruments panel (InstrumentsControlPanel.qml)</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/instrumentsscene/qml/MuseScore/InstrumentsScene/InstrumentsPanel.qml" line="123"/>
+        <source>There are no instruments in your score. To choose some, press &lt;b&gt;Add&lt;/b&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -25245,11 +25242,6 @@ failed.</source>
     <message>
         <location filename="../../src/framework/shortcuts/qml/MuseScore/Shortcuts/internal/ShortcutsTopPanel.qml" line="63"/>
         <source>Define…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/framework/shortcuts/qml/MuseScore/Shortcuts/internal/ShortcutsTopPanel.qml" line="79"/>
-        <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
