@@ -5409,10 +5409,13 @@ static int findPartGroupNumber(int* partGroupEnd)
 //  scoreInstrument
 //---------------------------------------------------------
 
-static void scoreInstrument(XmlWriter& xml, const int partNr, const int instrNr, const QString& instrName)
+static void scoreInstrument(XmlWriter& xml, const int partNr, const int instrNr, const QString& instrName, const Instrument* instr)
       {
       xml.stag(QString("score-instrument %1").arg(instrId(partNr, instrNr)));
       xml.tag("instrument-name", instrName);
+      if (!instr->instrumentId().isEmpty()) {
+        xml.tag("instrument-sound",instr->instrumentId())
+      }
       xml.etag();
       }
 
@@ -5883,9 +5886,9 @@ static void partList(XmlWriter& xml, Score* score, MxmlInstrumentMap& instrMap)
                   for (int i = 0; i < 128; ++i) {
                         DrumInstrument di = drumset->drum(i);
                         if (di.notehead != NoteHead::Group::HEAD_INVALID)
-                              scoreInstrument(xml, idx + 1, i + 1, di.name);
+                              scoreInstrument(xml, idx + 1, i + 1, di.name,di);
                         else if (pitches.contains(i))
-                              scoreInstrument(xml, idx + 1, i + 1, QString("Instrument %1").arg(i + 1));
+                              scoreInstrument(xml, idx + 1, i + 1, QString("Instrument %1").arg(i + 1),di);
                         }
                   int midiPort = part->midiPort() + 1;
                   if (midiPort >= 1 && midiPort <= 16)
@@ -5901,7 +5904,7 @@ static void partList(XmlWriter& xml, Score* score, MxmlInstrumentMap& instrMap)
                   MxmlReverseInstrumentMap rim;
                   initReverseInstrMap(rim, instrMap);
                   for (int instNr : rim.keys()) {
-                        scoreInstrument(xml, idx + 1, instNr + 1, MScoreTextToMXML::toPlainText(rim.value(instNr)->trackName()));
+                        scoreInstrument(xml, idx + 1, instNr + 1, MScoreTextToMXML::toPlainText(rim.value(instNr)->trackName()),rim.value(instNr));
                         }
                   for (auto ii = rim.constBegin(); ii != rim.constEnd(); ii++) {
                         int instNr = ii.key();
